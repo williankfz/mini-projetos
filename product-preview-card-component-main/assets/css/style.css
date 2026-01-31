@@ -1,0 +1,127 @@
+:root {
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  background: var(--cream);
+}
+
+.fraunces {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+section.container {
+  display: flex;
+  align-items: flex-start;
+  margin: 50px auto;
+  width: 600px;
+  background: var(--white);
+  gap: 20px;
+}
+
+.perfume-img img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.perfume-content {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.perfume-content h3 {
+  text-transform: uppercase;
+  color: var(--grey);
+  letter-spacing: 10px;
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+.perfume-content h1 {
+  max-width: 230px;
+  width: 100%;
+  margin-bottom: 20px;
+  color: var(--black);
+}
+
+.perfume-content p {
+  width: 230px;
+  margin-bottom: 20px;
+  color: var(--grey);
+}
+
+.perfume-price {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.perfume-price h2 {
+  font-size: 32px;
+  color: var(--green-500);
+}
+
+p.off {
+  width: unset;
+  font-size: 12px;
+  text-decoration: line-through;
+  margin-bottom: 0px;
+}
+
+.btn {
+  width: 80%;
+  background: var(--green-500);
+  color: var(--white);
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.btn::before {
+  content: '';
+  background: url('../images/icon-cart.svg') no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: -5px;
+}
+
+.btn:hover {
+  background: var(--green-700);
+}
+
+@media (max-width: 700px) {
+  section.container {
+    flex-direction: column;
+    width: 300px;
+    gap: 0px;
+  }
+}
