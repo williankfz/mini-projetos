@@ -1,0 +1,113 @@
+:root {
+  --blue-500: hsl(215, 51%, 70%);
+  --cyan-400: hsl(178, 100%, 50%);
+  --blue-950-main-bg: hsl(217, 54%, 11%);
+  --blue-900-card-bg: hsl(216, 50%, 16%);
+  --blue-800-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  background: var(--blue-950-main-bg);
+  color: var(--white);
+}
+
+section.container {
+  display: block;
+  margin: 50px auto;
+  width: 400px;
+  background: var(--blue-900-card-bg);
+  border-radius: 10px;
+}
+
+.nft-img {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.nft-img img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.nf-content {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.nf-content h1 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.nf-content .descrip {
+  color: var(--blue-500);
+  margin-bottom: 20px;
+}
+
+.ntf-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--blue-800-line);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.ntf-info .price {
+  color: var(--cyan-400);
+}
+
+.ntf-info .price::before {
+  content: '';
+  background: url('../images/icon-ethereum.svg') no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 3px;
+}
+
+.ntf-info .days {
+  color: var(--blue-500);
+}
+
+.ntf-info .days::before {
+  content: '';
+  background: url('../images/icon-clock.svg') no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 5px;
+}
+
+.creator {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.creator-img img {
+  width: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
